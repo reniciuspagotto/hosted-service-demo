@@ -17,7 +17,7 @@ namespace HostedServiceSample.HostedService
 
         public Task StartAsync(CancellationToken cancellationToken)
         {
-            new Timer(ExecuteProccess, null, TimeSpan.Zero, TimeSpan.FromSeconds(5));
+            new Timer(ExecuteProcess, null, TimeSpan.Zero, TimeSpan.FromSeconds(5));
             return Task.CompletedTask;
         }
 
