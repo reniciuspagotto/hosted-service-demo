@@ -21,7 +21,7 @@ namespace HostedServiceSample.HostedService
             return Task.CompletedTask;
         }
 
-        private void ExecuteProccess(object state)
+        private void ExecuteProcess(object state)
         {
             _logger.LogInformation("### Proccess executing ###");
             _logger.LogInformation($"{DateTime.Now}");
